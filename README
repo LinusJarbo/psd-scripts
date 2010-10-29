@@ -2,7 +2,7 @@ a (growing?) collection of PSD CS5 scripts in .jsx
 
 *incrementalsave.jsx
 	Saves a new png of current open document in psd in incremental order.
-	(currently script wont save higher than 9 images)
+	
 	- change path to folder in script
 	- add execution of script to shortcut key in psd
 		
