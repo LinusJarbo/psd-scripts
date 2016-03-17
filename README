@@ -5,4 +5,7 @@ a (growing?) collection of PSD CS5 scripts in .jsx
 	
 	- change path to folder in script
 	- add execution of script to shortcut key in psd
+	
+*getSolidFillColor.jsx
+	Get all layers in PSD doc of type SOLIDFILL and return color.
 		
