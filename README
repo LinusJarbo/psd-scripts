@@ -8,4 +8,8 @@ a (growing?) collection of PSD CS5 scripts in .jsx
 	
 *getSolidFillColor.jsx
 	Get all layers in PSD doc of type SOLIDFILL and return color.
+	
+*saveIcon.jsx
+	Saves image icons in png format, following the pixel dimensions defined in the beginning of script.
+	Saves in the same folder as document is saved.
 		
