@@ -1,5 +1,9 @@
 a (growing?) collection of PSD scripts in .jsx
 
+*layer_upOneLayerAndActivate.jsx
+*layer_downOneLayerAndActivate.jsx
+	Workflow scripts - assign to hotkey for fast manipulations of layers.
+
 *incrementalsave.jsx
 	Saves a new png of current open document in psd in incremental order.
 	
