@@ -7,9 +7,6 @@ a (growing?) collection of PSD scripts in .jsx
 *incrementalsave.jsx
 	Saves a new png of current open document in psd in incremental order.
 	
-	- change path to folder in script
-	- add execution of script to shortcut key in psd
-	
 *getSolidFillColor.jsx
 	Get all layers in PSD doc of type SOLIDFILL and return color.
 	
@@ -26,3 +23,6 @@ a (growing?) collection of PSD scripts in .jsx
 *guides_from_rows_and_columns.jsx
 	Adds guides to a doc based on rows and columns division
 	Adds pixels in width and height if needed for prefect sized grid
+
+*distributeSelectionIslandsToLayers.jsx
+	distributes a single layers ctrl-clicked selection and its selectionsislands to separate layers.
