@@ -17,4 +17,8 @@ a (growing?) collection of PSD scripts in .jsx
 	Saves image icons in png format. 
 	Pixel dimensions defined in the beginning of script.
 	Saves in the same folder as document is saved.
-		
+
+*documentSetup.jsx
+	Change document mode to RGB if CMYK or other.
+	Sets dpi to 300 without resample
+	Changes color profile	
