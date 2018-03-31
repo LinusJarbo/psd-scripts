@@ -22,3 +22,7 @@ a (growing?) collection of PSD scripts in .jsx
 	Change document mode to RGB if CMYK or other.
 	Sets dpi to 300 without resample
 	Changes color profile	
+
+*guides_from_rows_and_columns.jsx
+	Adds guides to a doc based on rows and columns division
+	Adds pixels in width and height if needed for prefect sized grid
