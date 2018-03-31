@@ -2,7 +2,8 @@
 // tested in photoshop CC 19.1.12
 
 //Does:
-//This sets a document mode to RGB, 300 dpi without rescaling (and to color profile Adobe RGB(1998) if you switch the false statement to true)
+//This sets a document mode to RGB, 300 dpi without rescaling 
+//(and to color profile Adobe RGB(1998) if you switch the false statement to true)
 
 //Usage:
 //run this script from an action, and run that action from a hotkey set to run selected action
