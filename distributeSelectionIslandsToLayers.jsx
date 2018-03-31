@@ -6,7 +6,8 @@
     This script distributes each selection island to its own layer. i.e similar to "distribute to layers" concept.
     
     How?:
-    Ctrl-select a single layer in photoshop that you want to distribute to layers. Hide anything below that you don't want to be merged into the layer distribution.
+    Ctrl-select a single layer in photoshop that you want to distribute to layers. 
+    Hide anything below that you don't want to be merged into the layer distribution.
     
     Usage:
     -Remove noisy image garbage by reviewing a layered list with pixel content (layers), instead of the actual image.
