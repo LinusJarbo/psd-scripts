@@ -2,7 +2,7 @@
    Tested with CC 2018:
      
     Does:
-    If you ctrl-select a layer in photoshop. That will select all pixels according to the alpha channel on that layer.
+    If you ctrl-select a layer in photoshop. That will select all pixels according to the inverse of the transparency on that layer.
     This script distributes each selection island to its own layer. i.e similar to "distribute to layers" concept.
     
     How?:
