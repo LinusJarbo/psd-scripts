@@ -29,7 +29,6 @@ if(doc.colorProfileName != "Adobe RGB (1998)"){
    
    //set to true if you trust the convertProfile function.
    if(false){
-       var intent = "PERCEPTUAL";
         var blackPointCompensation = true;
         var dither = true;
         doc.convertProfile ("Adobe RGB (1998)", Intent.RELATIVECOLORIMETRIC, blackPointCompensation, dither); 
