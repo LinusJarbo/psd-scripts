@@ -13,6 +13,9 @@
     -if you want to preserve floor shadow on cut out object in an otherwise transparent image.
     -if multiply is not available but transparency is.
     -expert masking.
+    
+    How:
+    you will need to include stdlib.js from xbytor - in a folder you named "include"
 */
 
 #target photoshop
@@ -100,7 +103,7 @@ function main()
 
 function rasterizeLayer()
 {
-     var idrasterizeLayer = stringIDToTypeID( "rasterizeLayer" );
+    var idrasterizeLayer = stringIDToTypeID( "rasterizeLayer" );
     var desc5 = new ActionDescriptor();
     var idnull = charIDToTypeID( "null" );
         var ref4 = new ActionReference();
@@ -119,7 +122,6 @@ function rasterizeLayer()
 
 function selectColorRange(scObj)
 {
-
     var desc = new ActionDescriptor();
     desc.putInteger( charIDToTypeID( "Fzns" ), 0 );
     var cDesc = new ActionDescriptor();
@@ -130,13 +132,3 @@ function selectColorRange(scObj)
     desc.putObject( charIDToTypeID( "Mxm " ), charIDToTypeID( "RGBC" ), cDesc );
     executeAction( charIDToTypeID( "ClrR" ), desc, DialogModes.NO );
 }
-
-/*
-function unlockLayer(){  
-    if(app.activeDocument.activeLayer.isBackgroundLayer ) app.activeDocument.activeLayer.name = 'From Background';  
-    if(app.activeDocument.activeLayer.allLocked) app.activeDocument.activeLayer.allLocked = false;  
-    if(app.activeDocument.activeLayer.pixelsLocked) app.activeDocument.activeLayer.pixelsLocked = false;  
-    if(app.activeDocument.activeLayer.positionLocked) app.activeDocument.activeLayer.positionLocked = false;  
-    if(app.activeDocument.activeLayer.transparentPixelsLocked) app.activeDocument.activeLayer.transparentPixelsLocked = false;  
-}; 
-*/
