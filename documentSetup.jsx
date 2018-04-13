@@ -1,12 +1,14 @@
-﻿//if you don't need to review the image content, there might be faster methods outside photoshop to setup document?
-// tested in photoshop CC 19.1.12
+﻿/*
+    if you don't need to review the image content, there might be faster methods outside photoshop to setup document?
+    tested in photoshop CC 19.1.12
 
-//Does:
-//This sets a document mode to RGB, 300 dpi without rescaling 
-//(and to color profile Adobe RGB(1998) if you switch the false statement to true)
+    Does:
+    This sets a document mode to RGB, 300 dpi without rescaling 
+    (and to color profile Adobe RGB(1998) if you switch the false statement to true)
 
-//Usage:
-//run this script from an action, and run that action from a hotkey set to run selected action
+    Usage:
+    run this script from an action, and run that action from a hotkey set to run selected action
+*/
 
 #target photoshop
 
@@ -25,15 +27,20 @@ if(doc.resolution != 300){
  };
 
 //set colorprofile
-if(doc.colorProfileName != "Adobe RGB (1998)"){
-    alert("wrong profile");
-   
-   //set to true if you trust the convertProfile function.
-   if(false){
-        var blackPointCompensation = true;
-        var dither = true;
-        doc.convertProfile ("Adobe RGB (1998)", Intent.RELATIVECOLORIMETRIC, blackPointCompensation, dither); 
+try{
+    if((doc.colorProfileName != "Adobe RGB (1998)"))
+    {
+        alert("wrong profile: " + doc.colorProfileName);
     }
-};
+}catch(e)
+{
+    alert("No colorprofile");
+}
 
-alert(doc.colorProfileName);
+//set to true if you trust the convertProfile function.
+ if(false){
+      var blackPointCompensation = true;
+      var dither = true;
+      var intentcolor = Intent.RELATIVECOLORIMETRIC;
+      doc.convertProfile ("Adobe RGB (1998)", intentcolor, blackPointCompensation, dither); 
+ }
