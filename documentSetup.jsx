@@ -31,6 +31,8 @@ try{
     if((doc.colorProfileName != "Adobe RGB (1998)"))
     {
         alert("wrong profile: " + doc.colorProfileName);
+    }else{
+        alert("OK");
     }
 }catch(e)
 {
